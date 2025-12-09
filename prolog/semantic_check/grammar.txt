@@ -1,0 +1,7 @@
+S -> NP VP
+NP -> Det N | N | PropN
+VP -> V NP | V
+Det -> 'a' | 'an' | 'the'
+N -> 'apple' | 'sandwich' | 'car'
+PropN -> 'John' | 'Mary'
+V -> 'eats' | 'drives'
