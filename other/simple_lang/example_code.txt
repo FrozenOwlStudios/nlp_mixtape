@@ -1,0 +1,9 @@
+number x = 5
+text msg = "x is big"
+
+if x > 3 {
+  print msg
+  print x + 10
+} else {
+  print "small"
+}
