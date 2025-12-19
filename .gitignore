@@ -6,3 +6,4 @@ target
 data
 .antlr
 *_out
+antlr_grammar
