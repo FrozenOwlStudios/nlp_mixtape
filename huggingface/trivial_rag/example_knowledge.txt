@@ -1,0 +1,50 @@
+[ROOM ACCESS]
+Room B02 is the headquarters of the RoboLab Science Club.
+Room B02 serves as the Robotics Laboratory.
+Room B02 is available to members of the RoboLab Science Club, students of the F specialization, and employees of the Department of MIR.
+Users of room B02 are obligated to respect the work of others.
+
+[PROPERTY LIABILITY Damage]
+Property located in room B02 is the property of PJATK.
+Intentional or grossly negligent damage to the equipment in room B02 is subject to repair at the perpetrator's expense.
+Any damage or malfunction of equipment in room B02 must be reported immediately to the Chair of the RoboLab Science Club, and in the case of damage to the UR7e robotic arms, to the Supervisor of the F Specialization.
+
+[STATIONS AND RULES OF USE]
+Room B02 has separate regulations for the UR7e robotic arms and the workbench.
+Persons using the UR7e arms or the workbench are required to familiarize themselves with the relevant regulations and health and safety instructions.
+
+After completing work, each workstation in room B02 must be left in a tidy condition.
+
+[ROOM SCHEDULE]
+The schedule for room B02 is approved by the Specialization F Supervisor and the RoboLab Science Club Chair.
+The current schedule for room B02 is available at https://tinyurl.com/PJATKscheduleB02, from the Specialization F Supervisor and the RoboLab Science Club Chair.
+
+[RESERVATIONS ROBOLAB STUDETN CLUB]
+During hours reserved by the RoboLab Science Club, room B02 is reserved exclusively for RoboLab Science Club members and individuals invited by the Science Club Board or the RoboLab Science Club Supervisor.
+
+[RESERVATIONS  DEPARTMENT STAFF]
+During hours reserved by a Department employee, room B02 is reserved exclusively for that employee.
+
+[UR7e  ACCESS]
+UR7e robotic arms may only be used by individuals authorized by the Arm Robotics Program Manager or the F Specialization Supervisor, after prior operation and safety training.
+
+[UR7e  PROHIBITIONS]
+Unauthorized disassembly of the UR7e arm components or controller, connection of additional devices, or modification of the robot's safety configuration is prohibited.
+
+[UR7e  LIABILITY]
+Users of UR7e robotic arms are liable for any damage resulting from failure to comply with the regulations or manufacturer's instructions.
+
+[WORKBENCH]
+The workbench in room B02 may only be used by individuals familiar with the regulations and the soldering iron's health and safety instructions.
+
+In the event of a malfunction at the workbench, turn off the power and report the problem to the RoboLab Science Club Chair.
+After completing work on the workbench, the workbench must be left tidy.
+
+[INJURIES LIABILITY]
+PJATK is not liable for any injuries resulting from failure to comply with the regulations or health and safety regulations.
+
+[CONTACT]
+Chairman of the RoboLab Science Club Franciszek Grochowski franciszek.grochowski@pjwstk.edu.pl
+Scientific Club Supervisor Maciej Maciejewski macmac@pjwstk.edu.pl
+Specialization F Supervisor Michal Majewski mmajew@pjwstk.edu.pl
+Arm Robotics Research Program Manager Oleksandr Zimenko ozima@pjwstk.edu.pl
