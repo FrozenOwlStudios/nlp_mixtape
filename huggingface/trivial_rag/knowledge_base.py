@@ -74,11 +74,21 @@ class KnowledgeBase:
         rev_scores = [RelevanceScore(score,idx) for score, idx in zip(scores[0],indices[0]) if score>min_score]
         rev_scores.sort()
         return rev_scores
+    
+    def get_relevant_context(self,query:str, k=5, min_score=0.3)-> str:
+        relevance_scores = self.get_relevance_scores(query,k,min_score)
+        context = []
+        for score in relevance_scores:
+            context.append(self._knowledge[self._keyword_sets[score.idx]])
+        if len(context) == 0:
+            return 'No information found'
+        return '\n'.join(context)
 
 
     @staticmethod
     def load_knowledge_file(file_path: str,
-                            sentence_transformer: SentenceTransformer|str)-> KnowledgeBase:
+                            sentence_transformer: SentenceTransformer|str,
+                            use_content_as_keywords = False)-> KnowledgeBase:
         knowledge: Dict[FrozenSet[str],List[str]] = {}
         with open(file_path, "r", encoding="utf-8") as knowledge_file:
             keywords: FrozenSet[str] = frozenset()
@@ -93,6 +103,8 @@ class KnowledgeBase:
                 if line.startswith("[") and line.endswith("]"):
                     if len(information_content) != 0:
                         content = '\n'.join(information_content)
+                        if use_content_as_keywords:
+                            keywords = frozenset(content.split())
                         if keywords in knowledge:
                             knowledge[keywords].append(content)
                         else:
@@ -103,6 +115,8 @@ class KnowledgeBase:
                     information_content.append(line)
             if len(information_content) != 0:
                 content = '\n'.join(information_content)
+                if use_content_as_keywords:
+                    keywords = frozenset(content.split())
                 if keywords in knowledge:
                     knowledge[keywords].append(content)
                 else:
@@ -117,13 +131,16 @@ class KnowledgeBase:
 
 def main()-> None:
     knowledge_base = KnowledgeBase.load_knowledge_file('example_knowledge.txt',
-                                                       "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+                                                       "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+                                                       use_content_as_keywords=True)
     print(knowledge_base.get_available_keywords())
-    query = ''
-    while query.lower() != 'exit':
+    while True:
         query = input('Query => ')
+        if query.lower() == 'exit':
+            break
         relevance = knowledge_base.get_relevance_scores(query)
         print(relevance)
+        print(knowledge_base.get_relevant_context(query))
 
 if __name__ == '__main__':
     main()
