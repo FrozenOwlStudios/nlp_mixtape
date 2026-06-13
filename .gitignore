@@ -3,7 +3,6 @@ __pycache__
 env
 local
 target
-data
 .antlr
 *_out
 antlr_grammar
