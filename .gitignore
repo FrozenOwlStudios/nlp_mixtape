@@ -25,3 +25,9 @@ env/
 .antlr
 *_out
 antlr_grammar
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.ruff_cache
