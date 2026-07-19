@@ -1,8 +1,27 @@
-.idea
-__pycache__
-env
-local
-target
+#===============================================================================
+#                                  LOCAL FOLDERS
+#===============================================================================
+Local/
+Target/
+Tmp/
+Output/
+Out/
+# TODO: Redo this with regex if possible
+local/
+target/
+tmp/
+output/
+out/
+
+
+#===============================================================================
+#                        IDE AND ENVIRONMENT FILES AND FOLDERS
+#===============================================================================
+.idea/
+.vscode/
+.venv/
+__pycache__/
+env/
 .antlr
 *_out
 antlr_grammar
