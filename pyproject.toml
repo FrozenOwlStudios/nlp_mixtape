@@ -8,6 +8,7 @@ dependencies = []
 
 [dependency-groups]
 dev = [
+  "ipython",
   "ruff",
   "mypy",
   "pytest",
@@ -24,4 +25,10 @@ nlp = [
     "spacy",
     "nltk",
     "gensim"
+]
+
+visualisation = [
+    "matplotlib",
+    "fpdf",
+    "wordcloud",
 ]
